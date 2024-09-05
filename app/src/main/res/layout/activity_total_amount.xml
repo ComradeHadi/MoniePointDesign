@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey_001">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/receiver_icon_img"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/box"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/box_grey"
+                android:layout_marginVertical="20dp"
+                android:layout_below="@id/logo"
+                android:contentDescription="@string/receiver_icon_img"
+                android:padding="0dp" />
+
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_estimated_amount"
+                android:textSize="25sp"
+                android:layout_below="@id/box"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1456_usd"
+                android:textSize="25sp"
+                android:layout_below="@+id/amount"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/green" />
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_notice"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_below="@+id/amount_value"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="40dp"
+                android:textColor="@color/light_grey" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back_to_home"
+                android:background="@drawable/circular_orange_bg"
+                android:focusable="true"
+                android:padding="20dp"
+                android:layout_marginVertical="50dp"
+                android:layout_below="@+id/desc"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
